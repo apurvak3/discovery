@@ -1,5 +1,6 @@
 import React from 'react';
 import { Search } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface CreationItem {
   id: string;
@@ -30,10 +31,10 @@ const DigitalCreationsGallery: React.FC = () => {
       </div>
       
       <div className="flex space-x-4 mb-6">
-        <button className="px-4 py-2 bg-blue-500 text-white rounded-full">Art</button>
-        <button className="px-4 py-2 bg-gray-200 text-gray-700 rounded-full">Collectibles</button>
-        <button className="px-4 py-2 bg-gray-200 text-gray-700 rounded-full">Virtual Worlds</button>
-        <button className="px-4 py-2 bg-gray-200 text-gray-700 rounded-full">Music</button>
+        <Link to={`/art`} className="px-4 py-2 bg-blue-500 text-white rounded-full">Art</Link>
+        <Link to={`/collectibles`} className="px-4 py-2 bg-gray-200 text-gray-700 rounded-full">Collectibles</Link>
+        <Link to={`/virtual_worlds`} className="px-4 py-2 bg-gray-200 text-gray-700 rounded-full">Virtual Worlds</Link>
+        <Link to={`/music`} className="px-4 py-2 bg-gray-200 text-gray-700 rounded-full">Music</Link>
       </div>
       
       <h2 className="text-2xl font-semibold mb-4">Featured</h2>
